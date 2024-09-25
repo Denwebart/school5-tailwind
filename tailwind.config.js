@@ -9,7 +9,6 @@ module.exports = {
         extend: {
             fontFamily: {
                 headings: 'Nunito',
-                text: 'Open Sans',
             },
         },
     },
