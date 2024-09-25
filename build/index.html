@@ -6,6 +6,15 @@
         <title>Дитяча школа мистецтв №5 Харківської міської ради</title>
         <link rel="stylesheet" href="css/style.css" />
         <script src="js/app.js" defer></script>
+        <!-- Alpine Plugins -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+
+        <!-- Alpine Core -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     <body>
         <!-- Header Section START -->
@@ -998,5 +1007,317 @@
             <!-- Posters Section END -->
         </main>
         <!-- Main Section END -->
+
+        <!-- Content Section START -->
+        <section class="mt-20">
+            <div class="container">
+                <div class="grid grid-cols-1 gap-10 lg:grid-cols-2">
+                    <!-- Content Block START -->
+                    <div class="flex flex-col gap-5">
+                        <h1
+                            class="hyphens-auto text-pretty font-headings text-4xl font-semibold">
+                            Про школу заголовок H1 сторінки
+                        </h1>
+                        <p
+                            class="hyphens-auto text-pretty font-text text-lg lg:text-base">
+                            У своїй діяльності організація використовує
+                            фінансово відповідальні до найменших дрібниць
+                            прораховані технології неперервної інтеграції,
+                            відкриттів та накопичення. Одна з провідних
+                            глобальних організацій надає широкий спектр послуг,
+                            а саме виготовлення ключів, юридичний захист ваших
+                            прав та пасажирські перевезення.
+                        </p>
+                        <p
+                            class="hyphens-auto text-pretty font-text text-lg lg:text-base">
+                            Завдяки технологічним та інноваційним продуктам та
+                            послугам, талановитим співробітникам і
+                            відповідальному ставленню до зберігання даних та
+                            інновацій, а також кооперації з рейтинговими
+                            агентствами та гуртовими постачальниками,
+                            підприємство відкриває перед світом нові приємні
+                            перспективи.
+                        </p>
+                        <p
+                            class="hyphens-auto text-pretty font-text text-lg lg:text-base">
+                            Стабільно пропонується широкий вибір безпрограшних
+                            домовленостей: підприємницька діяльність, мобільний
+                            голосовий зв'язок і свіжі овочі та фрукти для
+                            стильних особистостей і гостей столиці. Наша мета
+                            проста: це надання вам продуктів харчування,
+                            новаторства та бізнесу.
+                        </p>
+                        <p
+                            class="hyphens-auto text-pretty font-text text-lg lg:text-base">
+                            Завдяки технологічним та інноваційним продуктам та
+                            послугам, талановитим співробітникам і
+                            відповідальному ставленню до зберігання даних та
+                            інновацій, а також кооперації з рейтинговими
+                            агентствами та гуртовими постачальниками,
+                            підприємство відкриває перед світом нові приємні
+                            перспективи.
+                        </p>
+                        <p
+                            class="hyphens-auto text-pretty font-text text-lg lg:text-base">
+                            Стабільно пропонується широкий вибір безпрограшних
+                            домовленостей: підприємницька діяльність, мобільний
+                            голосовий зв'язок і свіжі овочі та фрукти для
+                            стильних особистостей і гостей столиці. Наша мета
+                            проста: це надання вам продуктів харчування,
+                            новаторства та бізнесу.
+                        </p>
+                    </div>
+                    <!-- Content Block START -->
+
+                    <!-- FAQ Block START -->
+                    <div class="flex flex-col gap-7">
+                        <h2
+                            class="hyphens-auto text-pretty font-headings text-4xl font-semibold">
+                            Відповіді на найпоширеніші запитання
+                        </h2>
+
+                        <div class="flex w-full flex-col gap-4">
+                            <div
+                                x-data="{ isExpanded: false }"
+                                class="divide-y divide-neutral-300 overflow-hidden rounded-md border-2 border-neutral-300">
+                                <button
+                                    id="controlsAccordionItemOne"
+                                    type="button"
+                                    class="flex w-full items-center justify-between gap-2 bg-gray-100 p-4 text-left font-headings text-lg underline-offset-2 hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:underline focus-visible:outline-none"
+                                    aria-controls="accordionItemOne"
+                                    @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? 'text-onSurfaceStrong font-bold'  : 'text-onSurface font-medium'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    Скільки коштує навчання?
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="size-5 shrink-0 transition"
+                                        aria-hidden="true"
+                                        :class="isExpanded  ?  'rotate-180'  :  ''">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div
+                                    x-cloak
+                                    x-show="isExpanded"
+                                    id="accordionItemOne"
+                                    role="region"
+                                    aria-labelledby="controlsAccordionItemOne"
+                                    x-collapse>
+                                    <p
+                                        class="text-pretty p-4 font-text text-base">
+                                        Стабільно пропонується широкий вибір
+                                        безпрограшних домовленостей:
+                                        підприємницька діяльність, мобільний
+                                        голосовий зв'язок і свіжі овочі та
+                                        фрукти для стильних особистостей і
+                                        гостей столиці. Наша мета проста: це
+                                        надання вам продуктів харчування,
+                                        новаторства та бізнесу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                x-data="{ isExpanded: false }"
+                                class="divide-y divide-neutral-300 overflow-hidden rounded-md border-2 border-neutral-300">
+                                <button
+                                    id="controlsAccordionItemTwo"
+                                    type="button"
+                                    class="flex w-full items-center justify-between gap-2 bg-gray-100 p-4 text-left font-headings text-lg underline-offset-2 hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:underline focus-visible:outline-none"
+                                    aria-controls="accordionItemTwo"
+                                    @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? 'text-onSurfaceStrong font-bold'  : 'text-onSurface font-medium'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    Скільки вчителів працює у школі?
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="size-5 shrink-0 transition"
+                                        aria-hidden="true"
+                                        :class="isExpanded  ?  'rotate-180'  :  ''">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div
+                                    x-cloak
+                                    x-show="isExpanded"
+                                    id="accordionItemTwo"
+                                    role="region"
+                                    aria-labelledby="controlsAccordionItemTwo"
+                                    x-collapse>
+                                    <p
+                                        class="text-pretty p-4 font-text text-base">
+                                        Стабільно пропонується широкий вибір
+                                        безпрограшних домовленостей:
+                                        підприємницька діяльність, мобільний
+                                        голосовий зв'язок і свіжі овочі та
+                                        фрукти для стильних особистостей і
+                                        гостей столиці. Наша мета проста: це
+                                        надання вам продуктів харчування,
+                                        новаторства та бізнесу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                x-data="{ isExpanded: false }"
+                                class="divide-y divide-neutral-300 overflow-hidden rounded-md border-2 border-neutral-300">
+                                <button
+                                    id="controlsAccordionItemThree"
+                                    type="button"
+                                    class="flex w-full items-center justify-between gap-2 bg-gray-100 p-4 text-left font-headings text-lg underline-offset-2 hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:underline focus-visible:outline-none"
+                                    aria-controls="accordionItemThree"
+                                    @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? 'text-onSurfaceStrong font-bold'  : 'text-onSurface font-medium'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    Скільки років триває навчання?
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="size-5 shrink-0 transition"
+                                        aria-hidden="true"
+                                        :class="isExpanded  ?  'rotate-180'  :  ''">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div
+                                    x-cloak
+                                    x-show="isExpanded"
+                                    id="accordionItemThree"
+                                    role="region"
+                                    aria-labelledby="controlsAccordionItemThree"
+                                    x-collapse>
+                                    <p
+                                        class="text-pretty p-4 font-text text-base">
+                                        Стабільно пропонується широкий вибір
+                                        безпрограшних домовленостей:
+                                        підприємницька діяльність, мобільний
+                                        голосовий зв'язок і свіжі овочі та
+                                        фрукти для стильних особистостей і
+                                        гостей столиці. Наша мета проста: це
+                                        надання вам продуктів харчування,
+                                        новаторства та бізнесу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                x-data="{ isExpanded: false }"
+                                class="divide-y divide-neutral-300 overflow-hidden rounded-md border-2 border-neutral-300">
+                                <button
+                                    id="controlsAccordionItemThree"
+                                    type="button"
+                                    class="flex w-full items-center justify-between gap-2 bg-gray-100 p-4 text-left font-headings text-lg underline-offset-2 hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:underline focus-visible:outline-none"
+                                    aria-controls="accordionItemThree"
+                                    @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? 'text-onSurfaceStrong font-bold'  : 'text-onSurface font-medium'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    Ще одне якесь питання?
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="size-5 shrink-0 transition"
+                                        aria-hidden="true"
+                                        :class="isExpanded  ?  'rotate-180'  :  ''">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div
+                                    x-cloak
+                                    x-show="isExpanded"
+                                    id="accordionItemThree"
+                                    role="region"
+                                    aria-labelledby="controlsAccordionItemThree"
+                                    x-collapse>
+                                    <p
+                                        class="text-pretty p-4 font-text text-base">
+                                        Стабільно пропонується широкий вибір
+                                        безпрограшних домовленостей:
+                                        підприємницька діяльність, мобільний
+                                        голосовий зв'язок і свіжі овочі та
+                                        фрукти для стильних особистостей і
+                                        гостей столиці. Наша мета проста: це
+                                        надання вам продуктів харчування,
+                                        новаторства та бізнесу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                x-data="{ isExpanded: false }"
+                                class="divide-y divide-neutral-300 overflow-hidden rounded-md border-2 border-neutral-300">
+                                <button
+                                    id="controlsAccordionItemThree"
+                                    type="button"
+                                    class="flex w-full items-center justify-between gap-2 bg-gray-100 p-4 text-left font-headings text-lg underline-offset-2 hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:underline focus-visible:outline-none"
+                                    aria-controls="accordionItemThree"
+                                    @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? 'text-onSurfaceStrong font-bold'  : 'text-onSurface font-medium'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    Ще одне якесь тестове питання?
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke-width="2"
+                                        stroke="currentColor"
+                                        class="size-5 shrink-0 transition"
+                                        aria-hidden="true"
+                                        :class="isExpanded  ?  'rotate-180'  :  ''">
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </button>
+                                <div
+                                    x-cloak
+                                    x-show="isExpanded"
+                                    id="accordionItemThree"
+                                    role="region"
+                                    aria-labelledby="controlsAccordionItemThree"
+                                    x-collapse>
+                                    <p
+                                        class="text-pretty p-4 font-text text-base">
+                                        Стабільно пропонується широкий вибір
+                                        безпрограшних домовленостей:
+                                        підприємницька діяльність, мобільний
+                                        голосовий зв'язок і свіжі овочі та
+                                        фрукти для стильних особистостей і
+                                        гостей столиці. Наша мета проста: це
+                                        надання вам продуктів харчування,
+                                        новаторства та бізнесу.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Block END -->
+                </div>
+            </div>
+        </section>
+        <!-- Content Section END -->
     </body>
 </html>
