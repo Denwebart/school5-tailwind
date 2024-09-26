@@ -16,7 +16,9 @@
             defer
             src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
-    <body>
+    <body
+        x-data="{ openMenu : false }"
+        :class="openMenu ? 'overflow-hidden' : 'overflow-visible' ">
         <!-- Header Section START -->
         <header class="mt-4">
             <div class="container">
@@ -133,7 +135,12 @@
             <div class="container">
                 <div class="flex items-center">
                     <!-- Burger button open START -->
-                    <button class="ml-auto inline-block lg:hidden">
+                    <button
+                        class="ml-auto inline-block lg:hidden"
+                        @click="openMenu = !openMenu"
+                        :aria-expanded="openMenu"
+                        aria-controls="mobile-navigation"
+                        aria-label="Меню навігації">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -517,6 +524,317 @@
         </nav>
         <!-- Main Menu END -->
 
+        <!-- Mobile Navigation START -->
+        <nav
+            id="mobile-navigation"
+            class="fixed bottom-0 left-0 right-0 top-0 z-10 overflow-y-auto overflow-x-hidden bg-gray-100 p-5 transition-all"
+            :class="openMenu ? 'visible translate-x-0' : 'invisible translate-x-full' "
+            x-cloak>
+            <!-- Burger button close START -->
+            <button
+                class="ml-auto block"
+                @click="openMenu = !openMenu"
+                :aria-expanded="openMenu"
+                aria-controls="mobile-navigation"
+                aria-label="Закрити меню навігації">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-12">
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <!-- Burger button close END -->
+
+            <ul class="flex w-screen flex-col">
+                <li>
+                    <a
+                        href="index.html"
+                        class="block py-2 font-headings text-xl font-bold text-[#009175]">
+                        Головна
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-bold">
+                        Про школу
+                    </a>
+                    <ul class="pl-3">
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Історія школи
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Проєктна діяльність
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Галерея
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-bold">
+                        Відділення
+                    </a>
+                    <ul class="pl-3">
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-bold">
+                                Музичне відділення
+                            </a>
+                            <ul class="pl-5">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 font-headings text-xl font-semibold">
+                                        Фортепіанно-струнний відділ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 font-headings text-xl font-semibold">
+                                        Народно-духовий відділ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="block py-2 font-headings text-xl font-semibold">
+                                        Вокально-хоровий відділ
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Музично-теоретичне відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Художнє відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Театрально-хореографічне відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Додаткові освітні платні послуги
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Інклюзивна початкова мистецька освіта
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Психолог
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Дистанційне відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Бібліотека
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-bold">
+                        Адміністрація
+                    </a>
+                    <ul class="pl-3">
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Кравчук Оксана Вікторівна
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Новікова Тетяна Сергіївна
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Вініченко Марина Володимирівна
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Шугай Алевтина Олександрівна
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-bold">
+                        Викладачі
+                    </a>
+                    <ul class="pl-3">
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Музичне відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Художнє відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Театральне відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Хореографічне відділення
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Інклюзивна початкова мистецька освіта
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Психолог
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Бібліотека
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-bold">
+                        Корисна інформація
+                    </a>
+                    <ul class="pl-3">
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Викладачам
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Батькам
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 font-headings text-xl font-semibold">
+                                Нормативна база
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-semibold">
+                        Новини
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-semibold">
+                        Події
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 font-headings text-xl font-semibold">
+                        Контакти
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Mobile Navigation END -->
+
         <!-- Main Section START -->
         <main>
             <!-- Hero Section START -->
@@ -809,7 +1127,6 @@
             <!-- Prosvita Section END -->
 
             <!-- Latest News Section START -->
-
             <section class="mt-20">
                 <div class="container">
                     <div

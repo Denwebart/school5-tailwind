@@ -14,10 +14,24 @@
     font-family: 'Nunito';
     font-weight: 600;
     src: url('../fonts/Nunito/Nunito-SemiBold.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    font-weight: 700;
+    src: url('../fonts/Nunito/Nunito-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
 }
 
 .is-pinned {
     background-color: #ffffff;
     border-bottom: 1px solid #e1e3e1;
     border-top: none;
+}
+
+[x-cloak] {
+    display: none !important;
 }
