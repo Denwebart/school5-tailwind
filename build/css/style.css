@@ -681,6 +681,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -779,6 +783,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[208px\] {
+  width: 208px;
 }
 
 .flex-shrink-0 {
@@ -1463,6 +1471,10 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1727,7 +1739,47 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:grid {
+    display: grid;
+  }
+
+  .\32xl\:auto-cols-min {
+    grid-auto-columns: min-content;
+  }
+
+  .\32xl\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
   .\32xl\:grid-cols-\[225px_1fr\] {
     grid-template-columns: 225px 1fr;
+  }
+
+  .\32xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-\[repeat\(auto-fit\2c minmax\(208px\2c 1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit,minmax(208px,1fr));
+  }
+
+  .\32xl\:grid-cols-\[repeat\(auto-fit\2c minmax\(200px\2c 1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  }
+
+  .\32xl\:grid-cols-\[repeat\(auto-fit\2c minmax\(201px\2c 1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit,minmax(201px,1fr));
+  }
+
+  .\32xl\:place-content-center {
+    place-content: center;
+  }
+
+  .\32xl\:place-items-center {
+    place-items: center;
+  }
+
+  .\32xl\:justify-items-center {
+    justify-items: center;
   }
 }
