@@ -6,11 +6,6 @@ module.exports = {
             center: true,
             padding: '1rem',
         },
-        extend: {
-            fontFamily: {
-                headings: 'Nunito',
-            },
-        },
     },
     plugins: [require('@tailwindcss/forms')],
 };

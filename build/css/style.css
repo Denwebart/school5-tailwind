@@ -749,6 +749,10 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
 
+html {
+  font-family: 'Nunito', system-ui, sans-serif;
+}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -1570,10 +1574,6 @@ select {
   text-align: justify;
 }
 
-.font-headings {
-  font-family: Nunito;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1739,6 +1739,18 @@ select {
 @font-face {
   font-family: 'Nunito';
 
+  src: url('../fonts/Nunito/Nunito-Italic.woff2') format('woff2');
+
+  font-weight: 400;
+
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+
   font-weight: 600;
 
   src: url('../fonts/Nunito/Nunito-SemiBold.woff2') format('woff2');
@@ -1751,11 +1763,35 @@ select {
 @font-face {
   font-family: 'Nunito';
 
+  font-weight: 600;
+
+  src: url('../fonts/Nunito/Nunito-SemiBoldItalic.woff2') format('woff2');
+
+  font-style: italic;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+
   font-weight: 700;
 
   src: url('../fonts/Nunito/Nunito-Bold.woff2') format('woff2');
 
   font-style: normal;
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+
+  font-weight: 700;
+
+  src: url('../fonts/Nunito/Nunito-BoldItalic.woff2') format('woff2');
+
+  font-style: italic;
 
   font-display: swap;
 }
