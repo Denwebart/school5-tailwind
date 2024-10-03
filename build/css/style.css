@@ -1067,6 +1067,10 @@ html {
   width: 1.75rem;
 }
 
+.w-\[352px\] {
+  width: 352px;
+}
+
 .w-auto {
   width: auto;
 }
