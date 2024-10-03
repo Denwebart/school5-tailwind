@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.12 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1075,10 +1075,6 @@ select {
   width: 100vw;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1219,10 +1215,6 @@ select {
 
 .gap-y-6 {
   row-gap: 1.5rem;
-}
-
-.gap-y-3 {
-  row-gap: 0.75rem;
 }
 
 .-space-x-px > :not([hidden]) ~ :not([hidden]) {
@@ -1448,11 +1440,6 @@ select {
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 
 .stroke-black\/20 {
@@ -1821,10 +1808,6 @@ select {
   opacity: 0.7;
 }
 
-.focus\:z-20:focus {
-  z-index: 20;
-}
-
 .focus\:outline-offset-0:focus {
   outline-offset: 0px;
 }
@@ -1874,10 +1857,6 @@ select {
   outline-color: #009175;
 }
 
-.focus-visible\:outline-indigo-600:focus-visible {
-  outline-color: #4f46e5;
-}
-
 .group:hover .group-hover\:visible {
   visibility: visible;
 }
@@ -1893,14 +1872,6 @@ select {
 }
 
 @media (min-width: 640px) {
-  .sm\:order-1 {
-    order: 1;
-  }
-
-  .sm\:order-3 {
-    order: 3;
-  }
-
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1915,10 +1886,6 @@ select {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
   }
 
   .sm\:gap-y-8 {
