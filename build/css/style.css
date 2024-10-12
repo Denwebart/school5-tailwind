@@ -1096,33 +1096,12 @@ html {
   width: 100vw;
 }
 
-.min-w-\[320px\] {
-  min-width: 320px;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
 
 .max-w-7xl {
   max-width: 80rem;
-}
-
-.max-w-\[320px\] {
-  max-width: 320px;
-}
-
-.max-w-\[400px\] {
-  max-width: 400px;
-}
-
-.max-w-\[360px\] {
-  max-width: 360px;
-}
-
-.max-w-max {
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 
 .flex-shrink-0 {
@@ -1327,20 +1306,12 @@ html {
   white-space: nowrap;
 }
 
-.whitespace-pre-wrap {
-  white-space: pre-wrap;
-}
-
 .text-nowrap {
   text-wrap: nowrap;
 }
 
 .text-pretty {
   text-wrap: pretty;
-}
-
-.break-words {
-  overflow-wrap: break-word;
 }
 
 .rounded-2xl {
@@ -2084,19 +2055,6 @@ html {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:max-w-full {
-    max-width: 100%;
-  }
-
-  .md\:max-w-0 {
-    max-width: 0px;
-  }
-
-  .md\:max-w-fit {
-    max-width: -moz-fit-content;
-    max-width: fit-content;
   }
 
   .md\:grid-cols-2 {
