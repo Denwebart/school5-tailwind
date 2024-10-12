@@ -875,14 +875,6 @@ html {
   z-index: 10;
 }
 
-.order-1 {
-  order: 1;
-}
-
-.-order-first {
-  order: 9999;
-}
-
 .-order-1 {
   order: -1;
 }
@@ -969,10 +961,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .block {
@@ -1108,12 +1096,33 @@ html {
   width: 100vw;
 }
 
+.min-w-\[320px\] {
+  min-width: 320px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px;
+}
+
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .flex-shrink-0 {
@@ -1205,6 +1214,10 @@ html {
   gap: 0.5rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1227,10 +1240,6 @@ html {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .gap-x-8 {
@@ -1318,12 +1327,20 @@ html {
   white-space: nowrap;
 }
 
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
 .text-nowrap {
   text-wrap: nowrap;
 }
 
 .text-pretty {
   text-wrap: pretty;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded-2xl {
@@ -1610,10 +1627,6 @@ html {
   padding-bottom: 2rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1636,10 +1649,6 @@ html {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
 }
 
 .text-left {
@@ -2077,6 +2086,19 @@ html {
     width: auto;
   }
 
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
+  .md\:max-w-0 {
+    max-width: 0px;
+  }
+
+  .md\:max-w-fit {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2113,10 +2135,6 @@ html {
   .md\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  }
-
-  .md\:pl-10 {
-    padding-left: 2.5rem;
   }
 
   .md\:text-start {
