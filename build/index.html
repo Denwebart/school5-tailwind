@@ -129,7 +129,7 @@
 
         <!-- Main Menu START -->
         <nav
-            class="main-menu sticky -top-px mt-4 border-b-2 border-t-2 border-solid border-y-[#e1e3e1] bg-gray-100 md:mt-6">
+            class="main-menu sticky -top-px z-10 mt-4 border-b-2 border-t-2 border-solid border-y-[#e1e3e1] bg-gray-100 md:mt-6">
             <div class="container">
                 <div class="flex items-center">
                     <!-- Burger button open START -->
@@ -563,8 +563,8 @@
         <!-- Mobile Navigation START -->
         <nav
             id="mobile-navigation"
-            class="fixed bottom-0 left-0 right-0 top-0 overflow-y-auto overflow-x-hidden bg-gray-100 p-5 transition-all"
-            :class="openMenu ? 'visible translate-x-0 z-0' : 'invisible translate-x-full z-10' "
+            class="fixed bottom-0 left-0 right-0 top-0 z-10 overflow-y-auto overflow-x-hidden bg-gray-100 p-5 transition-all"
+            :class="openMenu ? 'visible translate-x-0' : 'invisible translate-x-full' "
             x-cloak>
             <!-- Burger button close START -->
             <button
@@ -1044,7 +1044,7 @@
                                 class="relative aspect-square h-full md:-mx-8 lg:mx-0 lg:aspect-auto lg:h-full">
                                 <a href="profile.html">
                                     <img
-                                        class="absolute inset-0 left-1/2 top-1/2 z-0 h-full w-auto -translate-x-1/2 -translate-y-1/2 transform rounded-2xl bg-gray-800 object-cover shadow-2xl lg:left-0 lg:top-auto lg:transform-none"
+                                        class="absolute inset-0 left-1/2 top-1/2 h-full w-auto -translate-x-1/2 -translate-y-1/2 transform rounded-2xl bg-gray-800 object-cover shadow-2xl lg:left-0 lg:top-auto lg:transform-none"
                                         src="images/administration/director-speech.jpg"
                                         alt="Кравчук Оксана Вікторівна" />
                                 </a>
