@@ -129,7 +129,7 @@
 
         <!-- Main Menu START -->
         <nav
-            class="main-menu sticky -top-px z-10 mt-4 border-b-2 border-t-2 border-solid border-y-[#e1e3e1] bg-gray-100 md:mt-6">
+            class="main-menu sticky -top-px mt-4 border-b-2 border-t-2 border-solid border-y-[#e1e3e1] bg-gray-100 md:mt-6">
             <div class="container">
                 <div class="flex items-center">
                     <!-- Burger button open START -->
@@ -197,6 +197,13 @@
                                         href="#"
                                         class="group flex items-center hover:text-[#009175] lg:font-semibold">
                                         Проєктна діяльність
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="group flex items-center hover:text-[#009175] lg:font-semibold">
+                                        Символіка школи
                                     </a>
                                 </li>
                                 <li>
@@ -563,8 +570,8 @@
         <!-- Mobile Navigation START -->
         <nav
             id="mobile-navigation"
-            class="fixed bottom-0 left-0 right-0 top-0 z-10 overflow-y-auto overflow-x-hidden bg-gray-100 p-5 transition-all"
-            :class="openMenu ? 'visible translate-x-0' : 'invisible translate-x-full' "
+            class="fixed bottom-0 left-0 right-0 top-0 overflow-y-auto overflow-x-hidden bg-gray-100 p-5 transition-all"
+            :class="openMenu ? 'visible translate-x-0 z-0' : 'invisible translate-x-full z-10' "
             x-cloak>
             <!-- Burger button close START -->
             <button
@@ -613,6 +620,13 @@
                                 href="#"
                                 class="block py-2 text-xl font-semibold">
                                 Проєктна діяльність
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block py-2 text-xl font-semibold">
+                                Символіка школи
                             </a>
                         </li>
                         <li>
@@ -1828,6 +1842,13 @@
                                         href="#"
                                         class="text-lg font-semibold hover:text-[#009175] lg:text-base">
                                         Проєктна діяльність
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="text-lg font-semibold hover:text-[#009175] lg:text-base">
+                                        Символіка школи
                                     </a>
                                 </li>
                                 <li>
