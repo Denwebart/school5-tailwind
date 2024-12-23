@@ -961,18 +961,53 @@
             <section>
                 <div class="container mx-auto px-4">
                     <div
-                        class="mt-10 grid grid-cols-1 gap-14 xl:grid-cols-[1fr_minmax(20rem,30%)]">
-                        <!-- Основной контент -->
+                        class="mt-10 grid grid-cols-1 gap-16 lg:grid-cols-[1fr_minmax(20rem,30%)]">
+                        <!-- Main Content -->
                         <div>
-                            <h1 class="text-4xl font-semibold">
+                            <h1 class="text-3xl font-semibold md:text-4xl">
                                 Повна новина H1
                             </h1>
                             <article class="mt-10">
                                 <p class="hyphens-auto text-pretty text-lg">
-                                    <img
-                                        src="images/departments/picture-1.jpg"
-                                        class="mb-6 w-full rounded-lg lg:float-left 2xl:mb-0 2xl:mr-6 2xl:w-auto"
-                                        alt="content picture 1" />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                images/departments/picture-1_1536.webp
+                                            "
+                                            media="(min-width: 1280px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                images/departments/picture-1_1280.webp
+                                            "
+                                            media="(min-width: 1024px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                images/departments/picture-1_1024.webp
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                images/departments/picture-1_768.webp
+                                            "
+                                            media="(min-width: 640px)"
+                                            type="image/webp" />
+                                        <source
+                                            srcset="
+                                                images/departments/picture-1_640.webp
+                                            "
+                                            media="(min-width: 0px)"
+                                            type="image/webp" />
+
+                                        <img
+                                            class="mb-5 rounded-lg"
+                                            src="images/departments/picture-1_1024.jpg"
+                                            alt="picture-1"
+                                            width="1024"
+                                            height="684" />
+                                    </picture>
                                     У своїй діяльності організація використовує
                                     фінансово відповідальні до найменших
                                     дрібниць прораховані технології неперервної
@@ -1024,16 +1059,15 @@
                                     проста: це надання вам продуктів харчування,
                                     новаторства та бізнесу.
                                 </p>
-                                <!-- Остальной текст -->
                             </article>
                         </div>
-                        <!-- Сайдбар -->
+                        <!-- Main END -->
+                        <!-- Sidebar START -->
                         <div>
                             <h2 class="text-3xl font-semibold">
                                 Останні новини
                             </h2>
-                            <ul
-                                class="mt-10 flex flex-col gap-10 rounded-lg bg-gray-100 p-5">
+                            <ul class="mt-10 flex flex-col gap-10">
                                 <li class="group">
                                     <a href="#">
                                         <img
@@ -1081,6 +1115,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- Sidebar END -->
                     </div>
                 </div>
             </section>
