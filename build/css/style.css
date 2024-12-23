@@ -1230,8 +1230,8 @@ html {
   gap: 3rem;
 }
 
-.gap-14 {
-  gap: 3.5rem;
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-2 {
@@ -1264,10 +1264,6 @@ html {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-16 {
-  gap: 4rem;
 }
 
 .gap-x-8 {
@@ -2257,6 +2253,11 @@ html {
     text-align: start;
   }
 
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2265,16 +2266,6 @@ html {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
